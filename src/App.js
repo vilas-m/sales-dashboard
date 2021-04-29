@@ -1,9 +1,12 @@
+import Main from "./Containers/Main";
+function App() {
+  return (
+    <div
+    style={{width: '100%', height:'100vh'}}
+    >
+      <Main />
+    </div>
+  );
+}
 
-      function App() {
-          return (
-              <div>
-              Welcome
-              </div>
-          );}
-          
-      export default App;
+export default App;

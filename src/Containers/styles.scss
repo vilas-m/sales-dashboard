@@ -1,0 +1,62 @@
+$full-width: 100%;
+$full-height: 100%;
+$background: #bfbfbf;
+
+%flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+%flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  @extend %flex-column;
+  width: $full-width;
+  height: $full-height;
+  background-color: $background;
+  justify-content: space-around;
+  align-items: center;
+}
+
+%border {
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.top {
+  @extend %flex-row;
+  justify-content: space-between;
+  width: calc(100% - 20px);
+  height: 48%;
+}
+
+.bottom {
+  @extend %border;
+  @extend %flex-row;
+  width: calc(100% - 20px);
+  height: 48%;
+}
+
+.b-half {
+  width: calc(50% - 10px);
+  height: calc(100% - 10px);
+  margin: 5px;
+}
+
+.t-1 {
+  @extend %border;
+  width: 25%;
+}
+
+.t-2 {
+  @extend %border;
+  width: 43%;
+}
+
+.t-3 {
+  @extend %border;
+  width: 30%;
+}
